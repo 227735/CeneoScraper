@@ -47,7 +47,7 @@ for opinion in opinions:
 
     all_opinions.append(single_opinion)
 
-with open(f"./opinions/{product_code},json", "w", encoding ="UTF-8") as jf:
+with open(f"./opinions/{product_code}.json", "w", encoding ="UTF-8") as jf:
     json.dump(all_opinions, jf, indent = 4, ensure_ascii=False)
 
 # print(json.dumps(all_opinions, indent = 4, ensure_ascii=False))
